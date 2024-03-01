@@ -6,14 +6,26 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+// ---------------------------------------------------------------------------------
+// CoopeJuniors - Iniciativa para incentivar el ahorro
+// Matteo Vargas Quesada
+// Esteban Granados Sibaja
+
+// * Ininiciar un punto de trabajo (directorios, manejo de archivos e interfaces)
+// * (por mientras) ignorar las bases de datos
+// * crear las interfaces
+
+
+// git https://github.com/matteoquesada/Tarea-Progra2
 
 public class CoopApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(CoopApplication.class.getResource("hello-view.fxml"));
+
+        FXMLLoader fxmlLoader = new FXMLLoader(CoopApplication.class.getResource("hello-view.fxml")); // RAIZ
 
         // ES LA APLICACION EN SÍ
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240); // ESCENA PRINCIPAL
+        Scene scene = new Scene(fxmlLoader.load(), 1280, 720); // ESCENA PRINCIPAL
 
         stage.setTitle("titulo de la aplicacion");
 
