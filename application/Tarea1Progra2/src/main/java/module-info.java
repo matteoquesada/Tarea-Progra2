@@ -5,4 +5,6 @@ module una.tarea1progra2 {
 
     opens una.tarea1progra2 to javafx.fxml;
     exports una.tarea1progra2;
+    exports una.tarea1progra2.controller;
+    opens una.tarea1progra2.controller to javafx.fxml;
 }
