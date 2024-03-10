@@ -12,45 +12,32 @@ import javafx.scene.paint.Color;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**
  * JavaFX App
  */
-public class App extends Application {
 
-    public static void main(String[] args){
+
+public class App extends Application { // EXTENDS == INCLUDES == :
+
+
+
+    public static void main(String[] args){ // TO-DO  .admin
         launch(args); // INHERITED FROM Application CLASS
     }
 
     @Override
     public void start(Stage stage) throws Exception {
+
+        Group root = new Group(); // CLIP - SCENES
+
+        Scene scene = new Scene(root, Color.RED);
         
-        
-        Group root = new Group();
-        Scene scene = new Scene(root, Color.BLACK);
-        
-        stage.setTitle("Cooperativa ALPHA DEV");
+        stage.setTitle("Cooperativa BETA"); // PONERLE TITULO A LA VENTANA
         
         stage.setScene(scene);
-        stage.show();
-        
+
+        stage.show(); // SHOW
+
     }
-    
-  
-    
-    
 
 }
